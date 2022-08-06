@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+.header1{
+width: 100%;
+height: 3rem;
+padding-bottom: 5rem;
+background-color:black;
+
+
+}
+
+.logo{
+    height: auto;
+    width: auto;
+    max-height: 4rem;
+    max-width: 20%;
+
+}
+.navLinks{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.navLinks > a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+.header2{
+    
+}
+.background{
+   
+    background-image: url("./pictures/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+    width: 100%;
+    height: 5rem;
+}
+/*our members section*/
+
+.container{
+    justify-content: center;
+    display: flex;
+    }
+    
+    .card{
+        width: 270px;
+        margin:10px;
+        background-color:greenyellow;
+        border-radius: 15px;
+       
+    }
+    .card-image{
+        background-color: aqua;
+        height: 170px;
+        margin-bottom: 15px;
+        background-size: cover;
+    }
+    
+    .car1{
+        background-image: url('./pictures/yellowcar.jpg');
+    }
+    .car2{
+        background-image: url('./pictures/greencar.jpg');
+    }
+    .orinda{
+        background-image: url('./pictures/orinda.jpg');
+
+    }
+    .loveryln1{
+        background-image: url('./pictures/loverlyn1.jpg');
+    }
+    .elgar{
+        background-image: url('./pictures/elgar.jpg');
+     
+    }
+    .card p{
+        padding: 15px;
+    }
+    .card a{
+        background-color: black;
+        color: white;
+        padding: 15px 20px;
+        display: block;
+        text-align: center;
+    
+    }
+    .card:hover{
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transform:scale(1.03);
+        transition: all is ease;
+    }
+
+    /*section 5*/
+    .section6{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+       
+    }
+    .section6 >h2{
+       text-align: center;
+    }
+    .content-navigation a{
+        text-decoration:none;
+        justify-content: center;
+
+    }
+
+/*styling the form*/
+form{
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right:5% ;
+    background-color: #f2f2f2;
+
+}
+input{
+    margin: 15px 0;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+   
+
+}
+input[type=text]{
+    
+    
+}
+input[type=email]{
+    
+
+}
+input[type=submit]{
+    
+    border-radius: 20px;
+    width: 30%;
+    justify-content: center;
+   background-color: #89d8e3;
+   color: black;
+   
+    
+
+}
+
+textarea{
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
