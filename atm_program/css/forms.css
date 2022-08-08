@@ -1,0 +1,101 @@
+form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+form h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-bottom: 20px;
+}
+.account-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #070707; */
+  min-height: 100vh;
+}
+.login-container,
+.register-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  margin-top: 5rem;
+}
+/* Login form and register form inputs */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.gender-wrapper {
+  display: block;
+  margin: 5px 0;
+}
+.gender-wrapper input[type="radio"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 5px;
+}
+.terms {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+input:focus {
+  outline: none;
+  border: #070707 0.2px solid;
+}
+form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-transform: capitalize;
+}
+
+/* Login form and register form buttons */
+
+form button[type="submit"] {
+  background-color: #0f27ad;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 558px) {
+  form {
+    max-width: 30rem;
+  }
+}

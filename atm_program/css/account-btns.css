@@ -1,0 +1,58 @@
+.account-tab-register,
+.account-tab-login {
+  border: none;
+  outline: none;
+  color: #0f27ad;
+  margin: 0 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.app-account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  align-items: center;
+}
+.app-header{
+    max-width: 30rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color:#cccccc ;
+    border-radius: 20px;
+}
+.logout-container button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #c23623;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.app-container{
+    display: flex;
+    justify-content: center;
+    background-color: teal;
+    width: 100%;
+}
+.app-title {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}

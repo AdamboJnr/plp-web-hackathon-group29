@@ -5,22 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/account-btns.css" />
+    <link rel="stylesheet" href="./css/forms.css" />
+    <link rel="stylesheet" href="./css/app.css" />
     <title>Atm machine</title>
-</head>
-<body>
-    <h1 class="text-3xl font-bold underline px-4 text-red-600 ">
-        Hello world!
-      </h1>
-</body>
-</html>
   </head>
   <body>
-      <div class="container">
-        <h1>Welcome to Atm machine</h1>
-        <label for="">Enter your card number:</label>
-        <input type="text" name="name" placeholder="34434443" class="name">
-        <button id="name-btn">Submit name</button>
+    <!-- Register/login container -->
+    <div class="account-container">
+      <!-- Login -->
+      <div class="login-container">
+        <form action="" id="login-form">
+          <h3>Fill the form below to login</h3>
+          <div class="input-wrapper">
+            <label for="id">Id number</label>
+            <input type="text" placeholder="23432122" name="id" />
+          </div>
+          <div class="input-wrapper">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              placeholder="********"
+              maxlength="4"
+              minlength="4"
+              name="password"
+              pattern="[0-9]{4}"
+            />
+          </div>
+
+          <div>
+            <button class="login-buttton" type="submit">Login</button>
+          </div>
+          <div>
+            <p>
+              Don't have an account?<button class="account-tab-register">
+                Sign up
+              </button>
+            </p>
+          </div>
+        </form>
+      </div>
+      <!-- Register -->
+      <div class="register-container">
+        <form action="" id="register-form">
+          <h3>Fill the form below to register</h3>
+          <div class="input-wrapper">
+            <label for="firstName">First name</label>
+            <input type="text" placeholder="firstName" name="firstName" />
+          </div>
+          <div class="input-wrapper">
+            <label for="lastName">Last name</label>
+            <input type="text" placeholder="lastName" name="lastName" />
+          </div>
+          <div class="input-wrapper">
+            <label for="id">Id number</label>
+            <input
+              name="id"
+              type="text"
+              placeholder="23434564"
+              maxlength="8"
+              minlength="8"
+              pattern="[0-9]{8}"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              placeholder="1234"
+              maxlength="4"
+              pattern="[0-9]{4}"
+              minlength="4"
+              name="password"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="confirmPasword">Confirm Password</label>
+            <input
+              type="password"
+              placeholder="1234"
+              maxlength="4"
+              minlength="4"
+              pattern="[0-9]{4}"
+              name="confirmPassword"
+            />
+          </div>
+          <div class="input-wrapper terms">
+            <input type="checkbox" name="terms" />
+            <span>Accept terms and conditions</span>
+          </div>
+          <div>
+            <button class="register-buttton" type="submit">Register</button>
+          </div>
+          <div class="dont-have-account">
+            <p>
+              Already have an account?<button class="account-tab-login">
+                Sign in
+              </button>
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
-    <script src="./js/index.js"></script>
+    <!--  App container -->
+    <div class="app-container">
+      <div class="app-header">
+        <h3 class="app-title">Welcome to AP ATM</h3>
+        <div class="app-account">
+          <div class="user-account">
+            <p class="app-username"></p>
+            <p class="app-id"></p>
+            <p class="app-account-number"></p>
+            <p class="app-balance">N 0.00</p>
+          </div>
+          <div class="logout-container">
+            <button class="app-header-user-logout logout-btn">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/state.js"></script>
+    <script src="./js/accounts.js"></script>
   </body>
 </html>
