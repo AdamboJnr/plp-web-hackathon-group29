@@ -15,12 +15,13 @@
   gap: 20px;
 }
 
-.logout-container {
+.action-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   align-items: center;
+  flex-direction: column;
 }
 .app-header{
     max-width: 30rem;
@@ -32,7 +33,7 @@
     background-color:#cccccc ;
     border-radius: 20px;
 }
-.logout-container button {
+.action-container button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -42,13 +43,19 @@
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
+  width: 100%;
 }
-.app-container{
-    display: flex;
-    justify-content: center;
-    background-color: teal;
-    width: 100%;
+.action-container button:nth-child(1) {
+  background-color: #c23623;
 }
+.action-container button:nth-child(2) {
+  background-color: #0f27ad;
+}
+.action-container button:nth-child(3) {
+  background-color: #0f27ad;
+}
+
+
 .app-title {
   font-size: 2rem;
   color: #000000;

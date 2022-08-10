@@ -94,11 +94,28 @@ const addTransaction = (amount, type) => {
 
 // Update the balance
 const updateBalance = (amount, type) => {
+  if (typeof amount !== "number") {
+    alert("Please enter a valid amount");
+    return;
+  }
+
   if (type === "deposit") {
     state.account.balance += amount;
     updateLocalStorage();
     return;
   } else if (type === "withdraw") {
+    if (amount > state.account.balance) {
+      alert("Insufficient funds");
+      return;
+    }
+    if (state.account.balance <= amount) {
+      alert("You cannot withdraw all your money");
+      return;
+    }
+    if (state.account.balance <= 500) {
+      alert("You cannot withdraw beyond 500");
+      return;
+    }
     if (amount > state.account.balance) {
       alert("Insufficient funds");
       return;
