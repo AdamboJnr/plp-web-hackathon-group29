@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/account-btns.css" />
     <link rel="stylesheet" href="./css/forms.css" />
     <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/modal.css">
     <title>Atm machine</title>
   </head>
   <body>
@@ -119,13 +120,40 @@
             <p class="app-account-number"></p>
             <p class="app-balance">N 0.00</p>
           </div>
-          <div class="logout-container">
+          <div class="action-container">
             <button class="app-header-user-logout logout-btn">Logout</button>
+            <button class="app-header-user-logout deposit-button" id="deposit-button">Deposit</button>
+            <button class="app-header-user-logout withdraw-button" id="withdraw-button">Withdraw</button>
           </div>
         </div>
+      </div>
+      <div class="modal" id="modal">
+        <form action="" class="depositForm" id="deposit-form">
+          <h1>Deposit</h1>
+          <div class="input-wrapper">
+            <label for="amount">Enter Amount to Withdraw</label>
+            <input type="number" min="50" placeholder="1000" name="amount" />
+          </div>
+
+          <div>
+            <button class="deposit-buttton" type="submit">Deposit</button>
+          </div>
+        </form>
+        <form action="" class="withdrawForm" id="withdraw-form">
+          <h1>Withdraw</h1>
+          <div class="input-wrapper">
+            <label for="amount">Enter Amount to wthdraw</label>
+            <input type="number" min="0" max="2000000" placeholder="1000" name="amount" />
+          </div>
+
+          <div>
+            <button class="withdraw-buttton" type="submit" >Withdraw</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/state.js"></script>
     <script src="./js/accounts.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
